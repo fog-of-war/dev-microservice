@@ -5,7 +5,9 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
 @Module({
   imports: [
     AlertModule,
-    ClientsModule.register([{ name: 'ALERT', transport: Transport.TCP }]),
+    // ClientsModule.register([
+    //   { name: 'ALERT', transport: Transport.TCP, options: { port: 5000 } },
+    // ]),
   ],
   controllers: [],
   providers: [],
