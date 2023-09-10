@@ -13,6 +13,7 @@ async function bootstrap() {
     },
   );
   console.log('😘 Microservice is running');
+  // await app.startAllMicroServices();
   await app.listen();
 }
 bootstrap();
